@@ -61,7 +61,7 @@ nav ul li a:hover {
     justify-content: center;
     height: 100vh;
     text-align: center;
-    background: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('/images/homepage_img3.jpg') no-repeat center center/cover;
+    background: url('/images/homepage_img3.jpg') no-repeat center center/cover;
     color: white;
     position: relative;
     overflow: hidden;
