@@ -96,12 +96,12 @@ nav ul li a:hover {
         top: 0;
         right: -100%;
         width: 80%;
-        height: 100%;
-        background: rgba(20, 20, 20, 0.95);
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
         text-align: center;
-        padding-top: 100px;
+        padding: 50px 20px;
         transition: right 0.3s ease-in-out;
-        z-index: 1000;
+        z-index: 999;
     }
 
     nav ul.active {
@@ -114,6 +114,20 @@ nav ul li a:hover {
 
     .hamburger {
         display: block;
+        z-index: 1001;
+        position: relative;
+    }
+}
+
+@media (min-width: 769px) {
+    nav ul {
+        display: flex !important;
+        position: static;
+        background: none;
+    }
+
+    .hamburger {
+        display: none !important;
     }
 }
 
