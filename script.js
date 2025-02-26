@@ -39,4 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
       closeMenu();
     }
   });
+
+  window.addEventListener("scroll", function () {
+    let parallax = document.querySelector(".home-third-screen");
+    let scrollPosition = window.scrollY;
+    parallax.style.backgroundPositionY = -scrollPosition * 0.4 + "px";
+  });
 });
