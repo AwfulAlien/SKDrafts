@@ -193,20 +193,20 @@ nav ul li a:hover {
     color: black;
 }
 
-.home-second-screen {
+.home-services-screen {
     height: 100vh;
     width: 100%;
     background: #ddd;
 }
 
-.home-second-screen-header {
+.home-services-screen-header {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px 0;
 }
 
-.home-third-screen {
+.home-contact-screen {
     height: 100vh;
     width: 100%;
     background-image: url(./assets/images/contact_me.jpg);
@@ -219,7 +219,7 @@ nav ul li a:hover {
     background-position: center;
 }
 
-.home-third-screen::before {
+.home-contact-screen::before {
     content: "";
     position: absolute;
     top: 0;
@@ -230,30 +230,39 @@ nav ul li a:hover {
     pointer-events: none;
 }
 
-.home-third-screen>* {
+.home-contact-screen>* {
     position: relative;
     z-index: 1;
 }
 
-.home-third-screen-header {
+.home-contact-screen-header {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px 0;
 }
 
-.home-fourth-screen {
-    height: 100vh;
-    width: 100%;
-    background: #ddd;
+.home-about-screen {
+    height: 90vh;
+    width: 100%; 
 }
 
-.home-fourth-screen-header {
+.home-about-screen-header {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px 0;
 }
+
+.home-about-screen-content {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 7vw;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
 
 footer {
     height: 30vh;
@@ -336,6 +345,15 @@ footer {
 
     .content-p2 {
         font-size: 30px;
+    }
+
+    .home-about-screen-content {
+        display: flex;
+        flex-direction: row;
+        padding: 0 7vw;
+        font-size: 1rem;
+        letter-spacing: normal;
+        line-height: normal;
     }
 
 }
